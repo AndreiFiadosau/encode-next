@@ -44,7 +44,7 @@ function App() {
           onChange={(e) => setInput1(e.target.value)}
         />
         <input
-          type="password"
+          type="text"
           placeholder="Enter text for input2"
           value={input2}
           onChange={(e) => setInput2(e.target.value)}
@@ -57,7 +57,7 @@ function App() {
               checked={mode === "decrypt"}
               onChange={() => setMode("decrypt")}
             />
-            Decrypt
+            Mode1
           </label>
           <label>
             <input
@@ -66,7 +66,7 @@ function App() {
               checked={mode === "encrypt"}
               onChange={() => setMode("encrypt")}
             />
-            Encrypt
+            Mode2
           </label>
         </div>
         <button onClick={handleEncryptDecrypt}>GO</button>
